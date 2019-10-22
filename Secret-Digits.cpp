@@ -1,4 +1,3 @@
-// kk4036_hw8_q6.cpp : Program execution begins and ends in the 'main'
 // Write a program that reads in a line of text (sentence) 
 // and outputs the line with all the digits in all numbers replaced with 'x'.
 // e.g. My NYU Net ID is kk4036 and my 4 digit pin is 1234 which is a secret.
@@ -11,7 +10,6 @@
 // gives you the wordCount = spaceCount + 2
 
 
-#include "pch.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -69,106 +67,3 @@ string digToX(string str, char a) {
 	}
 	return editedStr;
 }
-
-
-/*JAIME's OFFICE HOUR
-string input = "john17 17 i3";
-string output = "john17 xx i3";
-// Where are the spaces and how many spaces are there 
-// since that will tell you how many words there are in the sentence
-// spaces = [6, 9]
-// for (i = 0; i < sentenceLength - 1; i++) {
-//	
-//}
-//[0, 6), [7, 9), [10, len(str))d
-
-void JAIME_findSpaces(int arr[], int s) {
-	for (i = 0; i < len(s); i++) {
-		if s[i] == ' ' :
-		arr.append(i)
-			def allDigits(s, start_idx, end_idx) :
-			// logic to check if all digits
-	// int arr[1024]: okay to use this to hold indices of spaces
-	// arr[j++] = i
-}
-
-int MY_findSpaces(string sentence) {
-	//string returnSentence;
-	int i, count, j, n = sentence.length();
-
-	//bool possibleInt = true;
-	for (int i = 0; i < n; i++) {
-		count = 0;
-		if (sentence.at(i) == ' ') {
-			i = arr[j];
-			j++;
-			count++;
-		}
-	}
-		//j = index # for space location index
-		return j;
-}
-
-//different approach
-string hideDigs(string sentence) {
-	string tempSentence;
-	int n = sentence.length();
-
-	bool possibleDig = true;
-	for (int i = 0; i < n; i++) {
-		if (isDigit(sentence.at(i)) && possibleDig)
-			tempSentence += 'x';
-		else {
-			tempSentence += sentence[i];
-			possibleDig = false;
-		}
-		if (sentence[i] == ' ')
-			possibleDig = true;
-	}
-	return tempSentence;
-}
-
-//separate by words using upper cases in a sentence function
-void separateByWords(string sentence) {
-	int i;//Loop variable
-	bool isUpper;
-
-	//Inputting string
-	cout << "Enter sentence:";
-	cin >> sentence;
-	
-	isUpper = false;
-	for (i = 0; i < sentence.length(); i++) {
-		if (isUpper(sentence.at(i)))//Checks for upper case character
-		{
-			sentence.insert(i, " "); //Inserting space
-
-				sentence.at(i + 1) = tolower(sentence.at(i + 1)); //Converting to lower case
-		}
-	}
-	cout << sentence << 
-}
-
-//initial thought process
-string changeNumToX(string sentence) {
-	int length, i;
-	//bool numOnly;
-
-	//getting the input sentence
-	cout << "Please enter a line of text: " << endl;
-	getline(cin, sentence);
-	cout << endl;
-
-	//finding th elength of the sentence
-	length = sentence.length();
-
-	//evaluating each char from the sentence
-
-	for (i = 0; i < length; i++) {
-		if (sentence[i] >= '0' && sentence[i] <= '9') {
-			sentence.at(i) = 'x';
-		}
-	}
-	return sentence;
-}
-*/
